@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran Learning</title>
+  <link rel="stylesheet" href="../css/styl.css">
+</head>
+<body>
+  <header>
+    <h1>القرآن الكريم</h1>
+    <p>Quran Learning</p>
+    <!-- <a href="#">home</a>
+    <a href="#">about</a> -->
+  </header>
+
+  <div class="container">
+    <div class="search-bar">
+      <!-- <input type="text" placeholder="البحث عن سورة..." /> -->
+    </div>
+
+    <div class="surah-grid">
+      <div class="surah-item">
+        <h3>Al-Faatihah</h3>
+        <p>سورة الفاتحة</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Faatihah')">Read</button>
+          <audio id="audioPlayer" src="01_AL-Fatihah Quran.mp3"></audio>
+        </div>
+      </div>
+      <div class="surah-item">
+        <h3>Al-Baqarah</h3>
+        <p>سورة البقرة</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Baqarah')">Read</button>
+         
+        </div>
+      </div>
+      <div class="surah-item">
+        <h3>AL-i-Imraan</h3>
+        <p>سورة آل عمران</p>
+        <div class="buttons">
+          <button onclick=" displayAyahs('AL-i-Imraan')">Read</button>
+        </div>
+      </div>
+      <div class="surah-item">
+        <h3>An-Nisaa</h3>
+        <p>سورة النساء</p>
+
+        <div class="buttons">
+          <button onclick="displayAyahs('An-Nisaa')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Maaida</h3>
+        <p>سورة المائدة</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Maaida')">Read</button>
+        </div>
+      </div>
+
+
+      <div class="surah-item">
+        <h3>Al-An'aam</h3>
+        <p>سورة الأنعام</p>
+
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anaam')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-A'raaf</h3>
+        <p>سورة الأعراف</p>
+
+
+        <div class="buttons">
+          <button onclick="displayAyahs('AL-araaf')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Anfal</h3>
+        <p>سورة الأنفال</p>
+
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>At-Tawbah</h3>
+        <p>سورة التوبة</p>
+
+
+        <div class="buttons">
+          <button onclick="displayAyahs('At-Tawbah')">Read</button>
+        </div>
+      </div>
+
+      
+      <div class="surah-item">
+        <h3>Yunus</h3>
+        <p>سورة يونس</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('yoonis')">Read</button>
+        </div>
+      </div>
+
+      
+      <div class="surah-item">
+        <h3>Hud</h3>
+        <p>سورة هود</p>
+
+        <div class="buttons">
+          <button onclick="displayAyahs('Huud')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Yusuf</h3>
+        <p>سورة يوسف</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('yuusuf')">Read</button> 
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>AL-racat</h3>
+        <p> سورة الرعد</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Racad')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Ibrahim</h3>
+        <p>سورة إبراهيم</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Ibraheem')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Hijr</h3>
+        <p>سورة الحجر</p>
+
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>An-Nahl</h3>
+        <p>سورة النحل</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Isra</h3>
+        <p>سورة الإسراء</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Kahf</h3>
+        <p>سورة الكهف</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Maryam</h3>
+        <p>سورة مريم</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('alkaaf')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Ta-Ha</h3>
+        <p>سورة طه</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Anbiya</h3>
+        <p>سورة الأنبياء</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Hajj</h3>
+        <p>سورة الحج</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Mu’minun</h3>
+        <p>سورة المؤمنون</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>AL-nuur</h3>
+        <p>سورة الفرقان</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Furqan</h3>
+        <p>سورة الفرقان</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>shucaraa</h3>
+        <p>سورة النمل</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>An-Naml</h3>
+        <p>سورة النمل</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Ankabut</h3>
+        <p>سورة العنكبوت</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Ar-Rum</h3>
+        <p>سورة الروم</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Luqman</h3>
+        <p>سورة لقمان</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>As-Sajda</h3>
+        <p>سورة السجدة</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Al-Ahzab</h3>
+        <p>سورة الأحزاب</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>saba</h3>
+        <p>سورة يس</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('yaasiin')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Faadhir</h3>
+        <p>سورة يس</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Ya-Sin</h3>
+        <p>سورة يس</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>As-Saffat</h3>
+        <p>سورة الصافات</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Sad</h3>
+        <p>سورة ص</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('sad')">Read</button>
+        </div>
+      </div>
+
+      <div class="surah-item">
+        <h3>Az-Zumar</h3>
+        <p>سورة الزمر</p>
+        <div class="buttons">
+          <button onclick="displayAyahs('Al-Anfal')">Read</button>
+        </div>
+      </div>
+
+      
+
+
+      <!-- Add more surahs as needed -->
+    </div>
+
+    
+
+    
+
+    <div id="ayah-display" class="ayah-display" style="display: none;">
+      <h2>Surah Content</h2>
+      <p id="ayahs-content"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Quran learning </p>
+  </footer>
+<script src="../main.js/main.js"></script>
+</body>
+</html>
